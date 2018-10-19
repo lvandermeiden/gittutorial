@@ -1,23 +1,17 @@
----
-title: "18-10-2018_HomeworkTheme"
-author: "Laura Vander Meiden"
-date: "October 19, 2018"
-output: html_document
----
 
-```{r setup, include=FALSE}
+
 .libPaths("C:/Users/Laura/Desktop/RLibrary")
 
 
-knitr::opts_chunk$set(echo=T)
+
 library(tidyverse)
 library(extrafont)
 loadfonts(device="win")
-```
+
 
 #Challenge Make two themes one for papers one for whatever you do for presentations
 
-```{r cars}
+
 theme_presentation <- function(color="grey39"){
   theme_classic(base_size=28, base_family="Times New Roman") %+replace%
     theme(
@@ -58,5 +52,5 @@ ggplot()+
   geom_point(data=mpg, aes(x=cty, y=hwy, colour=factor(cyl)))+
   labs(caption="This is my caption")+
   theme_paper()
-```
+
 
