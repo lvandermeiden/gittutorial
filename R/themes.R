@@ -1,12 +1,9 @@
 
-
-.libPaths("C:/Users/Laura/Desktop/RLibrary")
-
-
-
-library(tidyverse)
-library(extrafont)
-loadfonts(device="win")
+# I would not include these in your source file.  Move them to your main analysis file
+# .libPaths("C:/Users/Laura/Desktop/RLibrary")
+# library(tidyverse)
+# library(extrafont)
+# loadfonts(device="win")
 
 
 #Challenge Make two themes one for papers one for whatever you do for presentations
