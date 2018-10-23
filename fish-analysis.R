@@ -1,4 +1,7 @@
+.libPaths("C:/Users/Laura/Desktop/RLibrary")
 library(tidyverse)
+library(extrafont)
+loadfonts(device="win")
 
 source("R/themes.R")
 
@@ -17,7 +20,7 @@ ggplot()+
 ## Chris's modifications
 
 ggplot() +
-  geom_histogram(fishData = fish, aes(x = scalelength, fill = length_cat), colour = "black", bins = 25) +
+  geom_histogram(data = fishData, aes(x = scalelength, fill = length_cat), colour = "black", bins = 25) +
   facet_wrap(~length_cat) +
   coord_cartesian(ylim = c(0,500), xlim = c(0, 12), expand = FALSE) +
   theme_classic() +
